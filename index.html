@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/dc9aec1007.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu" style="right: -200px;"> <!-- Start with the sidebar hidden -->
+                    <li><a href="#header">Homepage</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>              
+                </ul>
+               
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1> Hi I'm <span>Rami</span> <br>Abdul Hamid</h1>
+            </div>
+        </div>
+    </div>
+<!--------------------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images\user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sube-title">About Me</h1>
+                    <p>I am Software Engineer and Graphic
+                        Designer in a fourth year IT student
+                        Damascus University .
+                        I am looking forward to more
+                        experience
+                        related to my studies, technology
+                        and I hope I can do a great job with you
+                        in the future.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-linke" onclick="opentabe('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentabe('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentabe('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tabe" id="Skills">
+                        <ul>
+                            <li><span>Graphic Designer</span><br>Adobe illustrator Adobe Photoshop</li>
+                            <li><span>web</span><br>flutter/css html javascript</li>
+                            <li><span>app</span><br>flutter</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2021-Curent</span><br>freelance graphic designer</li>
+                            <li><span>2022-Curent</span><br>freelance web developer</li>
+                            <li><span>2022-Curent</span><br>freelance app developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2021</span><br>graphic designer Syrian National Training Center</li>
+                            <li><span>Curent</span><br>Software engineer in the fourth year at Damascus University</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------services------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sube-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>web </h2>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>Graphic Designer</h2> design</h2>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <h2>APP</h2>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+     <!--------------------portfolio------------------->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sube-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" >
+                    <div class="layer">
+                        <h3>social media web</h3>
+                        <a href="https://www.facebook.com/profile.php?id=61556272863547"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" >
+                    <div class="layer">
+                        <h3> library app</h3>
+                        <a href="https://www.facebook.com/profile.php?id=61556272863547"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" >
+                    <div class="layer">
+                        <h3>ecommerce web</h3>
+                        <a href="https://www.facebook.com/profile.php?id=61556272863547"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.facebook.com/profile.php?id=61556272863547" class="btn">see more</a>
+        </div>
+     </div>
+        <!--------------------contact------------------->
+    <div id="contact">
+        <div class="container">
+            
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sube-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rami.abd.alhamed.333@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>+963 988795032</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61556272863547"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download=""  class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name " required >
+                        <input type="email" name="email"placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">
+                        
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentabe(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-linke"); 
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tabe"); 
+            }
+            event.currentTarget.classList.add("active-linke");
+            document.getElementById(tabname).classList.add("active-tabe");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        var menuIcon = document.querySelector(".fas.fa-bars");
+
+        function openmenu() {
+            // Check if the screen width is small before opening the menu
+            if (window.innerWidth <= 768) { // You can adjust the width to your breakpoint
+                sidemenu.style.right = "0";
+                document.addEventListener("click", closeOnClickOutside);
+            }
+        }
+
+        function closeOnClickOutside(event) {
+            if (!sidemenu.contains(event.target) && event.target !== menuIcon) {
+                closemenu();
+                document.removeEventListener("click", closeOnClickOutside);
+            }
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        // Add event listeners to close the sidebar when any choice is clicked
+        var sidebarLinks = document.querySelectorAll("#sidemenu a");
+        sidebarLinks.forEach(function(link) {
+            link.addEventListener("click", function() {
+                closemenu();
+            });
+        });
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyzryL-ss97D8dLMnC-Q088DBDV0yTl-eC6d9APa3o7x8xE2XnM8DmwXkCEtL7OaAnrFA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => { msg.innerHTML= "messge sent "
+            setTimeout(function(){
+                msg.innerHTML=''
+            },5000)
+            form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
